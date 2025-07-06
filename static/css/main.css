@@ -164,6 +164,11 @@ img.left, figure.left, div.figure.align-left {
 .clear {
   clear: both;
 }
+.centre, .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* .rst support */
 div.figure img, figure img {  /* to fill figure exactly */
