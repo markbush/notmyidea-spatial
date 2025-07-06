@@ -169,7 +169,18 @@ img.left, figure.left, div.figure.align-left {
   margin-left: auto;
   margin-right: auto;
 }
-
+.small {
+  width: 20%;
+}
+.medium {
+  width: 40%;
+}
+.half-width {
+  width: 50%;
+}
+.large {
+  width: 75%;
+}
 /* .rst support */
 div.figure img, figure img {  /* to fill figure exactly */
     max-width: 100%;
