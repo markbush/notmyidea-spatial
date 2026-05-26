@@ -9,7 +9,16 @@
                 <aside id="featured" class="body">
                     <article>
                         <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-                        {% include 'article_infos.html' %}{{ article.content }}{% include 'comments.html' %}
+                        {% include 'article_infos.html' %}
+                        {% if article.appstore %}
+                          <div class="figure">
+                              <a class="reference external image-reference" href="{{ article.appstore }}">
+                                  <img src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the App Store." />
+                              </a>
+                          </div>
+                        {% endif %}
+                        {{ article.content }}
+                        {% include 'comments.html' %}
                     </article>
                 </aside><!-- /#featured -->
                 {% if loop.length > 1 %}
